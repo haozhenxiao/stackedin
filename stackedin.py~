@@ -61,6 +61,9 @@ def checkUrl(url):
     conn.request('HEAD', p.path)
     resp = conn.getresponse()
     return resp.status < 400
+    
+def create_file():
+	
 			
 			
 if __name__ == "__main__":

@@ -56,11 +56,11 @@ def gen_html():
 	tree.write('index.html')
 			
 def checkUrl(url):
-    p = urlparse(url)
-    conn = httplib.HTTPConnection(p.netloc)
-    conn.request('HEAD', p.path)
-    resp = conn.getresponse()
-    return resp.status < 400
+	p = urlparse(url)
+	conn = httplib.HTTPConnection(p.netloc)
+	conn.request('HEAD', p.path)
+	resp = conn.getresponse()
+	return resp.status < 400
     
 def create_file():
 	
