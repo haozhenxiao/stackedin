@@ -64,7 +64,6 @@ def checkUrl(url):
     
 def create_file():
 	
-	
 			
 			
 if __name__ == "__main__":
