@@ -59,11 +59,12 @@ def gen_html():
 		print 'Validating Stackoverflow ID.....'
 		if checkUrl(flair) and checkUrl(profile):
 			valid_url = True
-	html = ('<html>'
-	'<head><meta content="0; url=' + profile + '" http-equiv="refresh" />'
+	html = ('<!DOCTYPE html>'
+	'<html>'
+	'<head><meta content="0; ' + profile + '" http-equiv="refresh" />'
 	'</head>'
-	'<body>'
-	'<img alt="Nothing" border="0" src="' + flair + '" />'
+	'<body><p><a href=' + profile + '>'
+	'<img alt="Nothing" border="0" src="' + flair + '" ></a></p>'
 	'</body>'
 	'</html>')
 	return base64.b64encode(html)
