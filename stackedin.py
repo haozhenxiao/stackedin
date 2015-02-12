@@ -63,7 +63,7 @@ def gen_html():
 	'<html>'
 	'<head><meta content="0; ' + profile + '" http-equiv="refresh" />'
 	'</head>'
-	'<body><p><a href=' + profile + '>'
+	'<body><p><a href="' + profile + '">'
 	'<img alt="Nothing" border="0" src="' + flair + '" ></a></p>'
 	'</body>'
 	'</html>')
